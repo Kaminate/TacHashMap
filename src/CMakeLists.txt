@@ -3,6 +3,7 @@ set(TacTarget "Shell")
 
 add_executable(${TacTarget}
   main.cpp
+  tacHashMap.h
   )
 
 set_target_properties( ${TacTarget} PROPERTIES OUTPUT_NAME "Example Project" )

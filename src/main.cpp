@@ -23,7 +23,7 @@ int main()
   };
 
   std::vector< std::pair< std::string, std::string > > pairs;
-  for( int i = 0; i < 10; ++i )
+  for( int i = 0; i < 100; ++i )
   {
     std::pair< std::string, std::string > myPair;
     myPair.first = std::to_string( rand() % 27 );
@@ -33,7 +33,7 @@ int main()
 
   myTacMap.Clear();
   myStdMap.clear();
-  for( int i = 0; i < 300; ++i )
+  for( int i = 0; i < 3000; ++i )
   {
     std::pair< std::string, std::string > myPair = pairs[ rand() % pairs.size() ];
     std::string key = myPair.first;

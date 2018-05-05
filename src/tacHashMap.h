@@ -30,7 +30,8 @@ struct TacHashMap
       node = &mNodes[ i ];
       if( !node->mOccupied )
         break;
-      if( node->mHash % mCapacity <= iEmpty )
+      int iDesired = node->mHash % mCapacity;
+      if( iDesired != i && iDesired <= iEmpty )
       {
         mNodes[ iEmpty ] = *node;
         *node = TacNode();
