@@ -1,5 +1,5 @@
 # Tac Hash Map
-Simple C++ hash map, collisions are cache-coherent via linear probing
+Simple C++ hash map, collisions are cache-coherent via https://en.wikipedia.org/wiki/Linear_probing
 
 # How to build
 > git clone https://github.com/Kaminate/TacHashMap  
